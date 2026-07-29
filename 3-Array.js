@@ -44,7 +44,7 @@ tasks.push("Exercise","Lunch making" , "Office Work", "Study JavaScript","take c
 console.log(tasks);
 
 
-//Part 2 - push(), pop(), shift(), unshift()
+// ====================================== Part 2 - push(), pop(), shift(), unshift() ====================================== 
 
 //6. Food Delivery App
 
@@ -77,4 +77,27 @@ console.log("Songs List" , songs);
 // shift()	Remove the first element
 
 
-// 0
+// 10 Cricket Team //Captain Dhoni joins at the beginning.
+
+let CricketTeam =['Virat', 'Rohit', 'Gill', 'Hardik'];
+CricketTeam.unshift("Dhoni");
+console.log("Cricket Team" , CricketTeam);
+
+
+// ====================================== Part 3 -slicet() ====================================== 
+let numberArray = [20 , 50, 89, 45, 77,56, 86, 23, 0, 12,77, 88, 66,23, 11,8, 75, 63, 27];
+let firstNoArra= numberArray.slice(0,5);
+console.log("Fisrt 5 no : " , firstNoArra);
+
+let lastNoArra= numberArray.slice(-5);
+console.log("last 5 no: " , lastNoArra);
+
+
+let MiddleNoArra= numberArray.slice(7,125);
+console.log("Middle 5 no.: " , MiddleNoArra);
+
+
+// 12.Create an array of weekdays.
+//Extract only weekdays from Monday to Wednesday.
+
+

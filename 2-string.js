@@ -100,3 +100,153 @@ console.log(UpdatedProgLang);
 //// ================================================== Part 4: Searching  ==================================================
 
 // 21. Find the position of "Script".
+let a22= "JavaScript";
+let position = a22.indexOf("Script");
+console.log(position);
+
+//22.Find the position of "Developer".
+let a33="Full Stack Developer";
+let devPosition = a33.indexOf("Developer");
+console.log(devPosition);
+
+//23.Check whether a sentence contains "React".
+let a44 = "Hey I am learning React JS";
+let checkReact = a44.includes("React");
+console.log(checkReact);
+
+//24.Check whether a URL starts with "https".
+let URL ="http://github.com/Shruti-Zambare-coder/Javascript";
+let httpsCheck = URL.includes("https");
+console.log(httpsCheck);
+
+//// ==================================================  Part 5: Trim  ==================================================
+//trim() removes whitespace from the beginning and end of a string. It does not remove spaces between words.
+
+//26.Remove the extra spaces.
+let username = "     Rahul     ";
+let extraSpace = username.trim();
+console.log(extraSpace);
+
+
+// 27.Print the length before and after trimming.
+console.log("Before Trim:", username.length);
+
+let length = extraSpace.length;
+console.log("After trim:" , length);
+
+//28. Remove the spaces.
+let emailID = "   admin@gmail.com   ";
+let noSpaceEmail = emailID.trim();
+console.log(noSpaceEmail);
+
+//// ==================================================   Part 6: Split  ==================================================
+//split() breaks the string into an array.
+
+//29 Split: HTML,CSS,JavaScript into an array.
+let webTech = "HTML,CSS,JavaScript";
+let arraywebTech = webTech.split(",");
+console.log(arraywebTech);
+
+// 30.Split:using spaces.
+let colors ="Red Green Blue";
+let colorsArray = colors.split(" ");
+console.log(colorsArray);
+
+
+// 31.Split:01-02-2025 into day, month, year.
+let date= "01-02-2025";
+let arraydate= date.split("-");
+console.log(arraydate);
+
+console.log("Day:", arraydate[0]);
+console.log("Month:", arraydate[1]);
+console.log("Year:", arraydate[2]);
+
+// 32.Count how many skills are available after splitting.
+let skills = "HTML,CSS,JavaScript,React,Node";
+let arraySkills = skills.split(",");
+console.log(arraySkills);
+console.log("Total Skills" , arraySkills.length);
+
+//// ================================================== Part 7: Concatenation  ==================================================
+//cconcat() joins strings together.
+// " " adds a space.
+
+
+// 33. Join first name and last name.
+let fname = "Shruti";
+let lname = "Zambare" ;
+let fullN = fname.concat(" " , lname);  
+
+console.log("My Full name:" , fullN);
+
+
+
+// 34. Join: Hello and World with a space.
+
+let fWord = "Hello";
+let sWord = "World";
+
+let word = fWord.concat( " ", sWord );
+console.log(word);
+
+
+
+//35. Create the following sentence using variables:
+//Hi, my name is Rahul and I am learning JavaScript.
+let course1 = "Javascript";
+// console.log('My name is ${fname} and I am learning ${course1}'); // '' not working
+console.log(`My name is ${fname} and I am learning ${course1}`);
+console.log("My name is " + fname + " and I am learning " + course1 + ".");
+
+//// ================================================== Part 8: Real-Life Examples ==================================================
+
+// 36.Create an email: firstname.lastname@gmail.com using variables.
+let crateEmail = `${fname.toLowerCase()}.${lname.toLowerCase()}@gmail.com`;
+console.log(crateEmail);
+
+// 37. Create a username by joining: First Name , Birth Year Example Rahul1999
+let Birth = 1995;
+let nameJoin = fname.concat(Birth);
+console.log(nameJoin);
+
+// 38.Remove all spaces from:
+// Full Stack Developer
+let aaa3 = "Full Stack Developer";
+let removeSpace = aaa3.replaceAll(" ", "");
+console.log(removeSpace);
+
+// 39.Convert:
+// javascript
+// into
+// JavaScript
+
+//40. Capitalize the first letter of your city.
+
+//// ================================================== Part 8:  Interview Levels ==================================================
+
+let str = "JavaScript";
+console.log(str.slice(4)); //Script
+
+console.log(str.substring(4, 10)); // Script
+
+let str1 = "Hello";
+
+console.log(str1.charAt(1)); // e
+console.log(str1[1]);// e
+
+let str2 = "JavaScript";
+console.log(str2.includes("script")); //false
+
+let str3 = "JavaScript";
+console.log(str3.toUpperCase().slice(4)); //SCRIPT
+
+
+
+
+
+
+
+
+
+
