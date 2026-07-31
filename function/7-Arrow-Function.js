@@ -130,7 +130,92 @@ console.log(temp(12));
 //11. Use an arrow function with your custom calculate() function to create a new array that contains the double of every number.
 
 let numbers = [10,20,30,40,50];
-// 
 
+//arrow funtion
+function calculate(arr, callback) {
+    return arr.map(callback);
+}
+let result = calculate(numbers, (num) => num * 2);
+console.log(result);
+
+
+//12. Using the same array, create a new array containing the square of every number.
+let squareNumbers = numbers.map((num) => num * num);
+console.log(squareNumbers);
+
+//13. Convert every number into a string.
+
+let stringNumbers = numbers.map((num) => String(num));
+
+console.log(stringNumbers);
+
+//14. Convert every number into
+
+let valueNumbers = numbers.map((num)=> "Value : " + num);
+console.log(valueNumbers);
+
+
+//15 give
+let names = ["Rahul","Anjali","Pooja","Ramesh"];
+
+let NamePrifix = names.map((nm) => "Mr./Ms. " + nm);
+console.log(NamePrifix);
+
+//================================================  Part D - Arrow Functions with Callback ================================================
+
+//16 
+
+let number16 = 10;
+// HOF
+function performCalculation(number, callback) {
+    //console.log(number, callback);
+    return callback(number);
+}
+
+// Square
+console.log("Square:", performCalculation(number16, (num) => num * num));
+
+//Cube
+console.log("Cube:", performCalculation(number16, (num) => num * num * num));
+
+//Multiply by 10
+console.log("Multiply by 10:", performCalculation(number16, (num) => num * 10));
+
+//Divide by 5
+console.log("Divide by 5:", performCalculation(number16, (num) => num / 5 ));
+
+
+// 17
+let salary = 45000;
+//HoF
+function salaryCalculation(salary , callback) {
+    return callback(salary);
+} 
+// Add Bonus
+console.log("Bouns 5K" ,salaryCalculation(salary, (sal)=> sal + 5000));
+// Deduct Tax
+console.log("Deduct tax : 18%" ,salaryCalculation(salary, (sal)=> sal -(sal * 18/100 )));
+// Add HRA 10%
+console.log("HRA 10%" ,salaryCalculation(salary, (sal)=> sal + (sal * 10/100 )));
+//Calculate PF 12%
+
+//18
+let name18 = "Dhoni";
+function processName(name, callback) {
+   return callback(name);
+}
+//Convert to Uppercase
+console.log("Convert to Uppercase :", processName(name18,(nm) => nm.toUpperCase()));
+
+//Convert to Lowercase
+console.log("Convert to Uppercase :", processName(name18,(nm) => nm.toLowerCase()));
+
+//Add "Mr."
+console.log("Add Mr. :", processName(name18,(nm) => "Mr." + nm));
+
+//Find Length
+console.log("Find Length :", processName(name18,(nm) => nm.length));
+
+//19.
 
  

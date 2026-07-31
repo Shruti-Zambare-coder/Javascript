@@ -99,5 +99,23 @@ console.log("Middle 5 no.: " , MiddleNoArra);
 
 // 12.Create an array of weekdays.
 //Extract only weekdays from Monday to Wednesday.
+let weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+];
+
+let Extract = weekdays.slice(0,3);
+console.log("Extract week", Extract)
+
+//13.Extract fruits from index 3 to 7.
+let fruits = ["Kiwi", "Apple" ,"Banana" ,"Chiku", "jackfruit" , "Orage", "Peer","strawberry", "dragunfruit" ,"Watermelon"];
+let furitExtract = fruits.slice(3, 7);
+console.log("Extract fruits", furitExtract)
+
 
 
