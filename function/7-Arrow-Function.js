@@ -217,5 +217,36 @@ console.log("Add Mr. :", processName(name18,(nm) => "Mr." + nm));
 console.log("Find Length :", processName(name18,(nm) => nm.length));
 
 //19.
+let marks = [45,78,90,35,67];
+//Add 5 marks
 
- 
+function marksCal(mark , callback){
+    return mark.map(callback);
+}
+//Add 5 marks
+console.log("Add 5 marks" , marksCal(marks,(res) => res + 5 ));
+
+//Convert into Pass/Fail
+console.log("Result:", marksCal(marks,(res) => res >= 40 ? "PASS" : "FAIL"));
+
+//Multiply by 2
+console.log("Multiply by 2",  marksCal(marks,(res) => res * 2 ));
+
+// Convert into Grade
+let grade = marksCal(marks,(res) => {
+    if(res >= 85) {
+        return "A";
+    }
+   else if(res >= 60) {
+        return "B";
+    }
+    else if(res >= 40) {
+        return "C";
+    }
+    else {
+        return "FAIL";
+    }
+}); 
+
+console.log("Grade" , grade);
+

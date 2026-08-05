@@ -91,6 +91,17 @@ console.log("Object:" , userObject );
 
 const numbers4 = [1, 2, 3, 2, 1, 4, 2, 3, 1];
 
+let OccurrenceNum = numbers4.reduce((accum , currentValue)=> {
+    if(accum[currentValue]){
+       accum[currentValue]++;
+    }
+    else{
+        accum[currentValue] =1;
+    }
+    return accum;
+},{});
+console.log("Occurrence", OccurrenceNum);
+
 
 //=============================  8: Find the Shortest Student Name  ============================= 
 
@@ -125,7 +136,7 @@ const cities = [
 ];
 
 let string = cities.reduce((accum, city)=> {
-
+      
 },);
 
 
